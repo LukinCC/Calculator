@@ -44,7 +44,7 @@ namespace Calculator
                     break;
 
                 case Operator.Division:
-                    result = value1 / value2;
+                    result = value1 / value2;  //Zero division catch later in exception
                     break;
 
                 default:

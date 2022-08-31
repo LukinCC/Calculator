@@ -10,7 +10,7 @@ namespace Repository
         /// </summary>
         /// <param name="calculationText">String representation of calculation operation</param>
         /// <returns></returns>
-        public bool WriteCalculation(string calculationOperation)
+        public bool WriteCalculationHistory(string calculationOperation)
         {
 
             using (var context = new MyDbContext())
@@ -18,7 +18,7 @@ namespace Repository
 
                 var calculatorHistory = new CalculatorHistory
                 {
-                    CalcationExpression = calculationOperation
+                    CalculationExpression = calculationOperation
                 };
 
                 context.CalculatorHistory.Add(calculatorHistory);
@@ -40,7 +40,7 @@ namespace Repository
 
             using (var context = new MyDbContext())
             {
-                calculationHistory = context.CalculatorHistory.OrderByDescending(o => o.Id).Take(numberOfLastOperation).Select(s => s.CalcationExpression).ToList();
+                calculationHistory = context.CalculatorHistory.OrderByDescending(o => o.Id).Take(numberOfLastOperation).Select(s => s.CalculationExpression).ToList();
 
             }
 

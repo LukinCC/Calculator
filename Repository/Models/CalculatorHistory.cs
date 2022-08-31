@@ -1,10 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Repository
 {
     /// <summary>
     /// Represent calulator operation history record
     /// </summary>
+    /// 
+    [Table("CalculatorHistory")]
     public class CalculatorHistory
     {
         /// <summary>
@@ -16,7 +19,7 @@ namespace Repository
         /// <summary>
         /// Calculation text representation
         /// </summary>
-        public string CalcationExpression { get; set; }
+        public string CalculationExpression { get; set; }
 
     }
 }

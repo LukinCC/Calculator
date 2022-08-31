@@ -21,8 +21,7 @@ namespace WebCalculatorMvc.Controllers
         public ActionResult Index()
         {
             var history = _respository.ReadCalculationHistory(10);
-            
-            //List<string> history = new List<string>() { "test1", "test2" };
+
             CalculatorModel calculatorModel = new CalculatorModel
             {
                 Expression = "",
@@ -63,7 +62,7 @@ namespace WebCalculatorMvc.Controllers
             }
             catch (Exception e)
             {
-                result = e.Message;
+                result = e.Message + e.InnerException.Message;
             }
 
             return Json(new

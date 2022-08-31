@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCalculatorMvc", "WebCalculatorMvc\WebCalculatorMvc.csproj", "{18199C0F-197A-46B7-9D0C-06D31CC8225B}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CalculatorDB", "CalculatorDB\CalculatorDB.sqlproj", "{62C38D90-66F1-43F9-A3F3-D2985E79FE26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{18199C0F-197A-46B7-9D0C-06D31CC8225B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18199C0F-197A-46B7-9D0C-06D31CC8225B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18199C0F-197A-46B7-9D0C-06D31CC8225B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C38D90-66F1-43F9-A3F3-D2985E79FE26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C38D90-66F1-43F9-A3F3-D2985E79FE26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C38D90-66F1-43F9-A3F3-D2985E79FE26}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{62C38D90-66F1-43F9-A3F3-D2985E79FE26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C38D90-66F1-43F9-A3F3-D2985E79FE26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C38D90-66F1-43F9-A3F3-D2985E79FE26}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

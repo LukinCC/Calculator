@@ -78,7 +78,7 @@ namespace Calculator
                     string resultText = caluationExpression + "=" + resultValue;
 
                     //Write calculation with resut into DB
-                    _repositoryService.WriteCalculation(resultText);
+                    _repositoryService.WriteCalculationHistory(resultText);
 
                     return resultValue;
                 }

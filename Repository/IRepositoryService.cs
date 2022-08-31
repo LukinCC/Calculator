@@ -16,7 +16,7 @@ namespace Repository
         /// </summary>
         /// <param name="calculationText">String representation of calculation operation</param>
         /// <returns></returns>
-        bool WriteCalculation(string calculationOperation);
+        bool WriteCalculationHistory(string calculationOperation);
 
 
         /// <summary>

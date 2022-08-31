@@ -196,7 +196,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dto\CalculatorHistory.cs" />
+    <Compile Include="Models\CalculatorHistory.cs" />
     <Compile Include="IRepositoryService.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="RepositoryService.cs" />
